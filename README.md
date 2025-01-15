@@ -29,8 +29,7 @@ Open your web browser and visit the public IP address of the deployed VM.
 ---
 
 ## Project Motivation
-This project was created as part of an interview process to showcase skills in:
-
+This project is a basic project created as part of an interview process to showcase skills in:
 - Setting up CI/CD workflows.
 - Using Terraform for cloud infrastructure provisioning.
 - Configuring servers with Ansible.
@@ -44,5 +43,8 @@ This project was created as part of an interview process to showcase skills in:
 - Monitoring: Integrate monitoring tools like Prometheus and Grafana to track the health of the deployed application.
 - Secrets Management: Store sensitive data (e.g., API keys) securely using tools like AWS Secrets Manager or HashiCorp Vault.
 - Testing: Add automated tests to the CI/CD pipeline to ensure code quality before deployment.
+- Security Enhancements: Use a .env file or GitHub Secrets to avoid hardcoding sensitive information (e.g., repository names, API keys) in workflows or scripts.
+- Access Control: Restrict access to the GitHub repository and enable branch protection rules to ensure only reviewed and approved changes are merged.
+- Folder Structure: Organize the repository into well-defined directories for better maintainability, such as separating Terraform, Ansible, and CI/CD workflows into distinct folders.
 
 ==Feel free to modify and extend the project to suit your needs!💫🥳==
