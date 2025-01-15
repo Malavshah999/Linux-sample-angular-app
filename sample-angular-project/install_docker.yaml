@@ -1,0 +1,16 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Run Angular app container
+      docker_container:
+        name: angular_app
+        image: ghcr.io/malavshah999/my-angular-app:latest
+        state: started
+        restart_policy: always
+        ports:
+          - "80:80"
