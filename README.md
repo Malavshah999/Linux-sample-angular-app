@@ -12,13 +12,12 @@ GitHub Actions is already configured in .github/workflows/build.yml
 The workflow builds the Angular project and pushes the Docker image to the GitHub Container Registry (GHCR).
 
 3. Deploy Infrastructure with Terraform
-Navigate to the terraform/ directory:
+Navigate to the / directory and perform below commands:
 ```
-cd terraform
 terraform init
 terraform apply
 ```
-This deploys a virtual machine (VM) to the chosen cloud provider (AWS or Azure).
+This deploys a virtual machine (VM) to the chosen cloud provider (AWS).
 
 4. Configure Docker with Ansible
 Use the provided Ansible playbook to install Docker and deploy the Angular container on the VM:
